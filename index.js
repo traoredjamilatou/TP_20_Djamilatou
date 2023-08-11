@@ -1,194 +1,77 @@
-
-document.getElementById("inscription").addEventListener("submit", function(e){    
-    var erreur;
-    var First = document.getElementById("First");
-    var Last = document.getElementById("Last");
-    var hg = document.getElementById("hg");
-    var  Number = document.getElementById("Number");
-    var Age = document.getElementById("Age");
-    var Male = document.getElementById("Male");
-    var Female = document.getElementById("Female");
-    var country= document.getElementById("country");
-    
-    
-    if (!country.value) {
-        erreur = "Veuillez renseigner un country";
-    }
-    if (!Age.value) {
-        erreur = "Veuillez renseigner un Age";
-    }
-    if (!Number.value) {
-        erreur = "Veuillez renseigner un Number";
-    }
-    if (!hg.value) {
-        erreur = "Veuillez renseigner un email";
-    }
-    if (!Last.value) {
-        erreur = "Veuillez renseigner un Last";
-    } 
-    if (!First.value) {
-        erreur = "Veuillez renseigner un First";
-    }
-    if (erreur) {
-        e.preventDefault();
-        document.getElementById("erreur").innerHTML = erreur
-        return false;
-    } else {
-        alert('Formulaire envoye !'); 
+let First = document.getElementById('First');
+let Last = document.getElementById('Last');
+let email = document.getElementById('email');
+let Number = document.getElementById('Number');
+let Age = document.getElementById('Age');
+let country = document.getElementById('country');
+let Submit = document.querySelector('.Submit');
+let erreur1 = document.querySelector('.erreur1');
+let erreur2 = document.querySelector('.erreur2');
+let erreur3 = document.querySelector('.erreur3');
+let erreur4 = document.querySelector('.erreur4');
+let erreur5 = document.querySelector('.erreur5');
+let erreur6 = document.querySelector('.erreur6');
 
     
-}
+    Submit.addEventListener('click', function (e) {
+        if(!First.value) {
+            erreur1.innerHTML = "section obligatoire";
+            erreur1.style.color = 'red';
+            First.style.background = 'red';
+            e.preventDefault()
+        }else{
+            erreur1.innerHTML = '';
+            First.style.background = 'pink';
+        }
+        if(!Last.value) {
+            erreur2.innerHTML = "section obligatoire";
+            // erreur2.innerHTML = "section obligatoire";
+            erreur2.style.color = 'red';
+            Last.style.background = 'red';
+            e.preventDefault()
+        }else{
+            erreur2.innerHTML = '';
+            Last.style.background = 'pink';
+        }
+        if(!Last.value) {
+            erreur3.innerHTML = "section obligatoire";
+            // erreur2.innerHTML = "section obligatoire";
+            erreur3.style.color = 'red';
+            hg.style.background = 'red';
+            e.preventDefault()
+        }else{
+            erreur3.innerHTML = '';
+            email.style.background = 'pink';
+        }
+        if(!Last.value) {
+            erreur4.innerHTML = "section obligatoire";
+            // erreur2.innerHTML = "section obligatoire";
+            erreur4.style.color = 'red';
+            Number.style.background = 'red';
+            e.preventDefault()
+        }else{
+            erreur4.innerHTML = '';
+            number.style.background = 'pink';
+        }
+        if(!Last.value) {
+            erreur5.innerHTML = "section obligatoire";
+            // erreur2.innerHTML = "section obligatoire";
+            erreur5.style.color = 'red';
+            Age.style.background = 'red';
+            e.preventDefault()
+        }else{
+            erreur5.innerHTML = '';
+            Age.style.background = 'pink';
+        }
+        if(!Last.value) {
+            erreur6.innerHTML = "section obligatoire";
+            // erreur2.innerHTML = "section obligatoire";
+            erreur6.style.color = 'red';
+            country.style.background = 'red';
+            e.preventDefault()
+        }else{
+            erreur6.innerHTML = '';
+            country.style.background = 'pink';
+        }
+    });
     
-});
-//  if (!Email.value) {
-    //      erreur = "Veuillez renseigner un Email";
-    //  }
-    
-   
-    // if (!Male.value) {
-    //     erreur = "Veuillez renseigner un Male";
-    // }
-    // if (!Female.value) {
-    //     erreur = "Veuillez renseigner un Female";
-    // }
-    // var inputs = document.getElementsByTagName("input")
-    
-    // for (var i = 0; i <inputs.length; i++){
-    //     if(!inputs[i].value){
-    //         erreur = "Veuillez renseigner tous les champs";
-    //     }
-    // }
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const nos = document.querySelector(".nos");
-// const B = document.querySelector(".B");
-// const D = document.querySelector(".D");
-// const C = document.querySelector(".C");
-// nos.addEventListener("click", () => {
-//     B.style.display = "none";
-//     D.style.display = "flex";
-//     C.style.display = "none";
-// });
-// const not = document.querySelector(".not");
-// not.addEventListener("click", () => {
-//     B.style.display = "flex";
-//     D.style.display = "none";
-//     C.style.display = "none";
-// });
-// const nom = document.querySelector(".nom");
-// nom.addEventListener("click", () => {
-//     C.style.display = "flex";
-//     B.style.display = "none";
-//     D.style.display = "none";
-// });
-
-// const mo = document.querySelector(".mo");
-// mo.addEventListener("click", ()=> {
-//  B.style.display = "none";
-//  D.style.display = "flex";
-//  C.style.display = "none";  
-// });
-// const mot = document.querySelector(".mot");
-// mot.addEventListener("click", ()=> {
-//  B.style.display = "flex";
-//  D.style.display = "none";
-//  C.style.display = "none";  
-// });
-// const mob = document.querySelector(".mob");
-// mob.addEventListener("click", ()=> {
-//  B.style.display = "none";
-//  D.style.display = "none";
-//  C.style.display = "flex";  
-// });
-
-// const U = document.querySelector(".U");
-// U.addEventListener("click", ()=> {
-//  B.style.display = "none";
-//  D.style.display = "flex";
-//  C.style.display = "none";  
-// });
-// const UR = document.querySelector(".UR");
-// UR.addEventListener("click", ()=> {
-//  B.style.display = "flex";
-//  D.style.display = "none";
-//  C.style.display = "none";  
-// });
-// const URM = document.querySelector(".URM");
-// URM.addEventListener("click", ()=> {
-//  B.style.display = "flex";
-//  D.style.display = "none";
-//  C.style.display = "none";  
-// });
-
-// const violet = document.querySelector(".violet");
-// B.style.display = "none";
-//  D.style.display = "flex";
-//  C.style.display = "none";
-// violet.addEventListener("click", () => {
-//     B.style.display = "flex";
-//     D.style.display = "none";
-//     C.style.display = "none";
-// });
-// violet.addEventListener("click", () => {
-//     C.style.display = "none";
-//     B.style.display = "flex";
-//     D.style.display = "none";
-// });
-// const DJ = document.querySelector(".DJ");
-// B.style.display = "none";
-//  D.style.display = "flex";
-//  C.style.display = "none";
-//  DJ.addEventListener("click", () => {
-//     B.style.display = "flex";
-//     D.style.display = "none";
-//     C.style.display = "none";
-// });
-// DJ.addEventListener("click", () => {
-//     C.style.display = "none";
-//     B.style.display = "none";
-//     D.style.display = "flex";
-// });
-// const rose = document.querySelector(".rose");
-// B.style.display = "none";
-//  D.style.display = "flex";
-//  C.style.display = "none";
-//  rose.addEventListener("click", () => {
-//     B.style.display = "flex";
-//     D.style.display = "none";
-//     C.style.display = "none";
-// });
-// rose.addEventListener("click", () => {
-//     C.style.display = "flex";
-//     B.style.display = "none";
-//     D.style.display = "none";
-// });
-// const v = document.querySelector(".v");
-// B.style.display = "none";
-//  D.style.display = "flex";
-//  C.style.display = "none";
-//  v.addEventListener("click", () => {
-//     B.style.display = "flex";
-//     D.style.display = "none";
-//     C.style.display = "none";
-// });
-// v.addEventListener("click", () => {
-//     C.style.display = "none";
-//     B.style.display = "flex";
-//     D.style.display = "none";
-// });
-
-

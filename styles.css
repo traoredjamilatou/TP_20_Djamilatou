@@ -36,7 +36,7 @@
      margin-top: 60px;
   }
   .G{
-    padding-left: 80px;  
+    padding-left: 30px;  
   }
   .vert{
      color:darkslateblue;
@@ -67,6 +67,29 @@
   }
   input{
     font-size: 15px;
+    margin-left: 40px;
+  }
+  .erreur1{
+    margin-left: 40px;
+  }
+  .erreur2{
+    margin-left: 40px;
+  }
+  .erreur3{
+    margin-left: 40px;
+  }
+  .erreur4{
+    margin-left: 40px;
+  }
+  .erreur5{
+    margin-left: 40px;
+  }
+  .erreur6{
+    margin-left: 40px;
+  }
+  .input-control{
+    display: flex;
+    padding: 0px;
   }
  /* a{
     padding: 0;
