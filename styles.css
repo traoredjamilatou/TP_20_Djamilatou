@@ -115,3 +115,33 @@
   .S{
     padding-top: 70px;
  }
+  
+ @media all and (max-width: 300px) {
+  .A{
+     display: flex !important; 
+     /* background-color: #6d7f52; */
+     flex-direction: column ;
+  }
+  .D img{
+     width: 100%;
+  }
+}
+@media all and (max-width: 300px){
+   .G p{
+      font-size: 20px;
+      /* margin-right: 200px; */
+   }
+   h3{
+     display: flex;
+     flex-direction:column;
+   }
+   .G{
+      padding-left: 50px;
+   }
+   .violet{
+      margin-left: 200px;
+   }
+   .img{
+      width: 100%;
+   }
+}
